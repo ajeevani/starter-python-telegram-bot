@@ -16,12 +16,12 @@ load_dotenv()
 # Read the variable from the environment (or .env file)
 bot_token = os.getenv('6508467896:AAGegUxpDlipA_oXFGHq4Cah3vnqbIC8POI')
 secret_token = os.getenv("bluefinfxbot1")
-# webhook_url = os.getenv('CYCLIC_URL', 'http://localhost:8181') + "/webhook/"
+webhook_url = os.getenv('https://copper-hedgehog-sock.cyclic.cloud/', 'http://localhost:8181') + "/webhook/"
 
 bot = Bot(token=bot_token)
-# bot.set_webhook(url=webhook_url)
-# webhook_info = bot.get_webhook_info()
-# print(webhook_info)
+bot.set_webhook(url=webhook_url)
+webhook_info = bot.get_webhook_info()
+print(webhook_info)
 
 def auth_telegram_token(x_telegram_bot_api_secret_token: str = Header(None)) -> str:
     # return true # uncomment to disable authentication
