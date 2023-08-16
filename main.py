@@ -15,7 +15,7 @@ load_dotenv()
 
 # Read the variable from the environment (or .env file)
 bot_token = os.getenv('6508467896:AAGegUxpDlipA_oXFGHq4Cah3vnqbIC8POI')
-secret_token = os.getenv("SECRET_TOKEN")
+secret_token = os.getenv("bluefinfxbot1")
 # webhook_url = os.getenv('CYCLIC_URL', 'http://localhost:8181') + "/webhook/"
 
 bot = Bot(token=bot_token)
